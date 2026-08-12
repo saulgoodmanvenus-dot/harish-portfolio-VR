@@ -1,6 +1,7 @@
 import YouTubeEmbed from './YouTubeEmbed';
 import ImageGallery from './ImageGallery';
 import RevealOnScroll from './RevealOnScroll';
+import LazyImage from './LazyImage';
 
 export default function ProjectSection({
   bgClass = 'section-darker',
@@ -31,10 +32,9 @@ export default function ProjectSection({
             </div>
             {image && (
               <div className="project-image">
-                <img
+                <LazyImage
                   src={image}
                   alt={title}
-                  loading="lazy"
                 />
               </div>
             )}

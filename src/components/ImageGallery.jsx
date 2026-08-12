@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import LazyImage from './LazyImage';
 
 export default function ImageGallery({ images, cols = 3 }) {
   const [lightboxImage, setLightboxImage] = useState(null);
@@ -12,14 +13,29 @@ export default function ImageGallery({ images, cols = 3 }) {
             className="gallery-item"
             onClick={() => setLightboxImage(img.full || img.thumb)}
           >
-            <img src={img.thumb} alt={img.alt || `Gallery image ${index + 1}`} loading="lazy" />
+            <LazyImage
+              src={img.thumb}
+              alt={img.alt || `Gallery thumbnail ${index + 1}`}
+            />
           </div>
         ))}
       </div>
       {lightboxImage && (
         <div className="lightbox-overlay" onClick={() => setLightboxImage(null)}>
-          <div className="lightbox-close" onClick={() => setLightboxImage(null)}>✕</div>
-          <img src={lightboxImage} alt="Full size" onClick={(e) => e.stopPropagation()} />
+          <button
+            className="lightbox-close"
+            onClick={() => setLightboxImage(null)}
+            aria-label="Close image lightbox"
+          >
+            ✕
+          </button>
+          <img
+            src={lightboxImage}
+            alt="Full size view"
+            loading="lazy"
+            decoding="async"
+            onClick={(e) => e.stopPropagation()}
+          />
         </div>
       )}
     </>

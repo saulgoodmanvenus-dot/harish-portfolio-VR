@@ -2,6 +2,7 @@ import RevealOnScroll from '../components/RevealOnScroll';
 import ProjectSection from '../components/ProjectSection';
 import YouTubeEmbed from '../components/YouTubeEmbed';
 import ImageGallery from '../components/ImageGallery';
+import LazyImage from '../components/LazyImage';
 
 const WEEBLY_BASE = 'https://harish-portfolio.weebly.com';
 
@@ -13,8 +14,6 @@ export default function Home() {
         className="hero"
         style={{
           backgroundImage: `url('${WEEBLY_BASE}/uploads/1/4/8/4/148408434/background-images/1995618105.png')`,
-          backgroundSize: '110%',
-          backgroundPosition: '50% 50%',
         }}
       >
         <div className="hero-content">
@@ -61,7 +60,7 @@ export default function Home() {
                 </ul>
               </div>
               <div className="project-image">
-                <img src={`${WEEBLY_BASE}/uploads/1/4/8/4/148408434/published/d.png?1780599927`} alt="Autism VR" loading="lazy" />
+                <LazyImage src={`${WEEBLY_BASE}/uploads/1/4/8/4/148408434/published/d.png?1780599927`} alt="Autism VR" />
               </div>
             </div>
           </RevealOnScroll>
@@ -88,27 +87,27 @@ export default function Home() {
               <h3 className="research-section-title">
                 Published Research & Telemetry Architecture
               </h3>
-              
+
               <div className="research-grid">
                 {/* Left: Real Live System Demonstration Photograph */}
                 <div className="research-image-wrapper">
-                  <img src="/autism_vr_demo.jpg" alt="Live VR Hardware & Telemetry Demonstration" />
+                  <LazyImage src="/autism_vr_demo.jpg" alt="Live VR Hardware & Telemetry Demonstration" />
                 </div>
 
                 {/* Right: Dark Academic Citation Card */}
                 <div className="research-card">
                   <div>
                     <p style={{ color: 'var(--text-muted)', fontSize: '0.8rem', marginBottom: '8px', fontWeight: 500 }}>
-                      Harish Kumar Senthilkumar (July 2026)
+                      Harish Kumar Senthilkumar (Submitted August 2026)
                     </p>
                     <h4 style={{ color: 'var(--text-white)', fontSize: '1.05rem', lineHeight: 1.4, marginBottom: '8px', fontWeight: 700 }}>
                       "Standalone VR for Behavioral Observation of Neurodivergent Children in Stress-Inducing Civic Environments: A Wizard-of-Oz LAN Architecture with Edge Telemetry"
                     </h4>
-                    <p style={{ color: 'var(--text-muted)', fontStyle: 'italic', fontSize: '0.8rem', marginBottom: '14px' }}>
-                      Zenodo Preprint Repository
+                    <p style={{ color: 'var(--accent-blue)', fontWeight: 600, fontSize: '0.85rem', marginBottom: '14px' }}>
+                      Under Peer Review — Virtual Reality Journal (Springer Nature) | Zenodo Preprint
                     </p>
                     <p style={{ color: 'var(--text-light)', fontSize: '0.85rem', lineHeight: 1.65, marginBottom: '18px' }}>
-                      Conceptualized, designed, built, and authored an independent research paper on standalone VR telemetry. Developed a Wizard-of-Oz (WoZ) LAN architecture for real-time remote scaffolding and edge telemetry logging. Deployed to N=13 pediatric participants; logged 394 discrete interaction events with zero critical failures.
+                      Conceptualized, designed, built, and authored an independent research paper on standalone VR telemetry. Developed a Wizard-of-Oz (WoZ) LAN architecture for real-time remote scaffolding and edge telemetry logging. Deployed to N=13 pediatric participants; logged 394 discrete interaction events with zero critical failures. Currently undergoing formal peer review at Virtual Reality (Springer Nature).
                     </p>
                   </div>
 

@@ -19,6 +19,8 @@ export default function YouTubeEmbed({ videoId }) {
             src={thumbnailUrl}
             alt="Video thumbnail"
             className="youtube-thumb-img"
+            loading="lazy"
+            decoding="async"
             onError={(e) => {
               // Fallback to hqdefault if maxresdefault doesn't exist
               e.target.src = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;

@@ -1,4 +1,5 @@
 import RevealOnScroll from '../components/RevealOnScroll';
+import LazyImage from '../components/LazyImage';
 
 export default function About() {
   const skills = [
@@ -51,7 +52,7 @@ export default function About() {
           <RevealOnScroll>
             <div className="about-grid">
               <div className="about-image-container">
-                <img
+                <LazyImage
                   src="https://harish-portfolio.weebly.com/uploads/1/4/8/4/148408434/published/d.png?1780599927"
                   alt="Harish Kumar"
                 />
