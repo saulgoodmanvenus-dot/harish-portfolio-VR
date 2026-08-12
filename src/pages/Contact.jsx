@@ -7,7 +7,7 @@ export default function Contact() {
       <section
         className="page-hero"
         style={{
-          backgroundImage: `url('https://harish-portfolio.weebly.com/uploads/1/4/8/4/148408434/background-images/117697527.jpg')`,
+          backgroundImage: `url('https://harish-portfolio.weebly.com/uploads/1/4/8/4/148408434/screenshot-2025-07-23-184017-2_orig.png')`,
           backgroundPosition: 'center',
           backgroundSize: 'cover',
         }}

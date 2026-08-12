@@ -35,7 +35,7 @@ export default function About() {
       <section
         className="page-hero"
         style={{
-          backgroundImage: `url('https://harish-portfolio.weebly.com/uploads/1/4/8/4/148408434/background-images/117697527.jpg')`,
+          backgroundImage: `url('/autism_vr_demo.jpg')`,
           backgroundPosition: 'center',
           backgroundSize: 'cover',
         }}
@@ -50,26 +50,18 @@ export default function About() {
       <section className="section section-dark about-content-section">
         <div className="container">
           <RevealOnScroll>
-            <div className="about-grid">
-              <div className="about-image-container">
-                <LazyImage
-                  src="https://harish-portfolio.weebly.com/uploads/1/4/8/4/148408434/published/d.png?1780599927"
-                  alt="Harish Kumar"
-                />
-              </div>
-              <div className="about-details">
-                <h2>Harish Kumar</h2>
-                <p className="role">VR Designer | XR Production Lead</p>
-                <p>
-                  Results-driven XR & Multimedia Production Lead with 4+ years of end-to-end experience in immersive technology, digital twins, and spatial computing.
-                </p>
-                <p>
-                  Proven track record of architecting standalone VR simulations for enterprise clients like Apollo Tyres and Denso, and leading independent research in behavioral telemetry. 
-                </p>
-                <p>
-                  Skilled in Unity XR Toolkit, Unreal Engine, and full-stack integration (C#, Node.js, cloud dashboard telemetry). Seeking to leverage expertise in 3D pipelines, real-time networking, and team-driven spatial storytelling to lead XR production.
-                </p>
-              </div>
+            <div className="about-details" style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
+              <h2>Harish Kumar</h2>
+              <p className="role">VR Designer | XR Production Lead</p>
+              <p>
+                Results-driven XR & Multimedia Production Lead with 4+ years of end-to-end experience in immersive technology, digital twins, and spatial computing.
+              </p>
+              <p>
+                Proven track record of architecting standalone VR simulations for enterprise clients like Apollo Tyres and Denso, and leading independent research in behavioral telemetry. 
+              </p>
+              <p>
+                Skilled in Unity XR Toolkit, Unreal Engine, and full-stack integration (C#, Node.js, cloud dashboard telemetry). Seeking to leverage expertise in 3D pipelines, real-time networking, and team-driven spatial storytelling to lead XR production.
+              </p>
             </div>
           </RevealOnScroll>
         </div>
@@ -107,7 +99,7 @@ export default function About() {
           <RevealOnScroll>
             <div className="skill-card" style={{ maxWidth: '800px', margin: '0 auto 24px' }}>
               <h3>Quexi Technologies — XR Production Lead / Senior XR Designer</h3>
-              <p style={{ color: '#667eea', marginBottom: '12px', fontWeight: 600 }}>
+              <p style={{ color: 'var(--accent-blue)', marginBottom: '12px', fontWeight: 600 }}>
                 April 2026 – Present
               </p>
               <p>
@@ -117,7 +109,7 @@ export default function About() {
 
             <div className="skill-card" style={{ maxWidth: '800px', margin: '0 auto 24px' }}>
               <h3>Marlion Technologies — Lead XR Designer</h3>
-              <p style={{ color: '#667eea', marginBottom: '12px', fontWeight: 600 }}>
+              <p style={{ color: 'var(--accent-blue)', marginBottom: '12px', fontWeight: 600 }}>
                 April 2023 – March 2026
               </p>
               <p>
@@ -127,7 +119,7 @@ export default function About() {
             
             <div className="skill-card" style={{ maxWidth: '800px', margin: '0 auto 24px' }}>
               <h3>Harji Lab Systems — Junior Draftsman & 3D Visualizer</h3>
-              <p style={{ color: '#667eea', marginBottom: '12px', fontWeight: 600 }}>
+              <p style={{ color: 'var(--accent-blue)', marginBottom: '12px', fontWeight: 600 }}>
                 Nov 2021 – Feb 2023
               </p>
               <p>

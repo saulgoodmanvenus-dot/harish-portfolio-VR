@@ -20,11 +20,33 @@ export default function Home() {
           <h1>HARISH KUMAR</h1>
           <div className="hero-divider"></div>
           <p className="hero-subtitle">VR DESIGNER | XR PRODUCTION LEAD</p>
+          
+          <div className="hero-tags">
+            <span>XR</span>
+            <span>•</span>
+            <span>UNITY</span>
+            <span>•</span>
+            <span>UNREAL ENGINE 5</span>
+          </div>
+
+          <div className="hero-actions">
+            <a href="#featured-projects" className="hero-btn-primary">
+              View Work
+            </a>
+            <a href="/contact" className="hero-btn-secondary">
+              Contact Me
+            </a>
+          </div>
         </div>
+
+        <a href="#about-me" className="hero-scroll-indicator" aria-label="Scroll to about me section">
+          <span>Scroll</span>
+          <div className="scroll-arrow">↓</div>
+        </a>
       </section>
 
       {/* ===== ABOUT ME ===== */}
-      <section className="about-me-section">
+      <section className="about-me-section" id="about-me">
         <div className="container">
           <RevealOnScroll>
             <h2>ABOUT&nbsp;ME</h2>
@@ -35,7 +57,7 @@ export default function Home() {
         </div>
       </section>
       {/* ===== PROJECTS HEADER ===== */}
-      <section className="section section-dark" style={{ paddingBottom: 0 }}>
+      <section className="section section-dark" id="featured-projects" style={{ paddingBottom: 0 }}>
         <div className="container">
           <RevealOnScroll>
             <h2 className="project-section-title">
