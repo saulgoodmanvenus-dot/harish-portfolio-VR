@@ -33,6 +33,9 @@ export default function Home() {
             <a href="#featured-projects" className="hero-btn-primary">
               View Work
             </a>
+            <a href="/about#social-impact" className="hero-btn-secondary">
+              Social Impact
+            </a>
             <a href="/contact" className="hero-btn-secondary">
               Contact Me
             </a>
