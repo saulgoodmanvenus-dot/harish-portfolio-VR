@@ -1609,3 +1609,266 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+/* ===== SOCIAL IMPACT SECTION ===== */
+.social-impact-section {
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.social-impact-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.08), transparent);
+}
+
+.social-impact-header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.social-impact-label {
+  display: inline-block;
+  font-family: var(--font-nav);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 16px;
+  padding: 6px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.social-impact-subtitle {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.social-impact-activities {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.social-impact-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.social-impact-card.reversed {
+  direction: rtl;
+}
+
+.social-impact-card.reversed > * {
+  direction: ltr;
+}
+
+/* Media Side */
+.social-impact-media {
+  position: relative;
+}
+
+.social-impact-single-image {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.4);
+  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.social-impact-single-image:hover {
+  transform: translateY(-6px);
+}
+
+.social-impact-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.social-impact-gallery .lazy-image-container {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.social-impact-gallery .lazy-image-container:hover {
+  transform: translateY(-4px) scale(1.02);
+}
+
+/* Info Side */
+.social-impact-info {
+  padding: 8px 0;
+}
+
+.social-impact-info-inner {
+  position: relative;
+}
+
+.social-impact-role-badge {
+  display: inline-block;
+  font-family: var(--font-nav);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.75);
+  padding: 5px 14px;
+  border: 1px solid;
+  border-radius: 20px;
+  margin-bottom: 16px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.social-impact-info h3 {
+  font-family: var(--font-subheading);
+  font-size: 1.65rem;
+  font-weight: 700;
+  color: var(--text-white);
+  margin-bottom: 6px;
+  letter-spacing: 0.5px;
+  line-height: 1.3;
+}
+
+.social-impact-org {
+  font-family: var(--font-nav);
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 18px;
+  text-transform: uppercase;
+}
+
+.social-impact-desc {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: var(--text-light);
+  margin-bottom: 24px;
+}
+
+.social-impact-highlights {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.social-impact-highlights h4 {
+  font-family: var(--font-nav);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.45);
+  margin-bottom: 16px;
+}
+
+.social-impact-highlights ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.social-impact-highlights li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: var(--text-light);
+}
+
+.impact-bullet {
+  flex-shrink: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  margin-top: 7px;
+  opacity: 0.8;
+  box-shadow: 0 0 8px currentColor;
+}
+
+/* ===== SOCIAL IMPACT RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .social-impact-card {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .social-impact-card.reversed {
+    direction: ltr;
+  }
+
+  .social-impact-activities {
+    gap: 56px;
+  }
+}
+
+@media (max-width: 768px) {
+  .social-impact-section {
+    padding: 60px 0;
+  }
+
+  .social-impact-header {
+    margin-bottom: 40px;
+  }
+
+  .social-impact-label {
+    font-size: 0.65rem;
+    letter-spacing: 3px;
+    padding: 5px 16px;
+  }
+
+  .social-impact-subtitle {
+    font-size: 0.92rem;
+  }
+
+  .social-impact-activities {
+    gap: 44px;
+  }
+
+  .social-impact-info h3 {
+    font-size: 1.35rem;
+  }
+
+  .social-impact-desc {
+    font-size: 0.9rem;
+  }
+
+  .social-impact-highlights {
+    padding: 18px;
+  }
+
+  .social-impact-highlights li {
+    font-size: 0.82rem;
+  }
+
+  .social-impact-gallery {
+    gap: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .social-impact-gallery {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .social-impact-info h3 {
+    font-size: 1.2rem;
+  }
+}
