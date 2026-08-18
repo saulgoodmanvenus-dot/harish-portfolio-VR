@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import RevealOnScroll from '../components/RevealOnScroll';
 import ProjectSection from '../components/ProjectSection';
 import YouTubeEmbed from '../components/YouTubeEmbed';
@@ -33,12 +34,12 @@ export default function Home() {
             <a href="#featured-projects" className="hero-btn-primary">
               View Work
             </a>
-            <a href="/about#social-impact" className="hero-btn-secondary">
+            <Link to="/about#social-impact" className="hero-btn-secondary">
               Social Impact
-            </a>
-            <a href="/contact" className="hero-btn-secondary">
+            </Link>
+            <Link to="/contact" className="hero-btn-secondary">
               Contact Me
-            </a>
+            </Link>
           </div>
         </div>
 
