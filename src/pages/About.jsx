@@ -1,5 +1,6 @@
 import RevealOnScroll from '../components/RevealOnScroll';
 import LazyImage from '../components/LazyImage';
+import SocialImpactSection from '../components/SocialImpactSection';
 
 export default function About() {
   const skills = [
@@ -129,6 +130,9 @@ export default function About() {
           </RevealOnScroll>
         </div>
       </section>
+
+      {/* ===== SOCIAL IMPACT ===== */}
+      <SocialImpactSection />
     </main>
   );
 }
